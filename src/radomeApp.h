@@ -10,7 +10,7 @@
 
 #include "turntableCam.h"
 #include "icosohedron.h"
-#include "radomeSyphonClient.h"
+//#include "radomeSyphonClient.h"
 #include "radomeProjector.h"
 #include "radomeModel.h"
 
@@ -74,7 +74,7 @@ protected:
     vector<radomeProjector*> _projectorList;
     ofxFenster* _projectorWindow;
     
-    radomeSyphonClient _vidOverlay;
+    //    radomeSyphonClient _vidOverlay;
     ofImage _blankImage;
     
     bool _fullscreen;
@@ -90,5 +90,5 @@ protected:
     vector<string> _mixModeNames;
     vector<string> _mappingModeNames;
 
-    vector<icosohedron::Triangle> _triangles;
+    vector<icosohedron::Triangle> _triangle;
 };
